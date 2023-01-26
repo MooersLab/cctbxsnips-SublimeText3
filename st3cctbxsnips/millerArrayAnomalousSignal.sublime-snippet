@@ -1,9 +1,0 @@
-<snippet>
-<content><![CDATA[
-miller_arrays[${1:0}].anomalous_signal()
-$0
-]]></content>
-<tabTrigger>millerArrayAnomalousSignal</tabTrigger>
-<scope></scope>
-<caption>Return the anomalous signal in a specified Miller array.</caption>
-</snippet>

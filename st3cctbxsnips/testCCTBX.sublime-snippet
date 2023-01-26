@@ -1,9 +1,0 @@
-<snippet>
-<content><![CDATA[
-libtbx.run_tests_parallel module=libtbx module=cctbx nproc=${1:6}
-$0
-]]></content>
-<tabTrigger>testCCTBX</tabTrigger>
-<scope></scope>
-<caption>Enter this snippet on the command line in an empty directory.</caption>
-</snippet>

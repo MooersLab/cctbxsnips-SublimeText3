@@ -1,9 +1,0 @@
-<snippet>
-<content><![CDATA[
-all_e_values = miller_array.quasi_normalize_structure_factors().sort(by_value="data")
-$0
-]]></content>
-<tabTrigger>normalizedStructureFactors</tabTrigger>
-<scope></scope>
-<caption>Calculate quasi-normalized structure factor.</caption>
-</snippet>

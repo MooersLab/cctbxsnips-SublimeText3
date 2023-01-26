@@ -1,9 +1,0 @@
-<snippet>
-<content><![CDATA[
-miller_arrays[${1:0}].wilson_ratio()
-$0
-]]></content>
-<tabTrigger>millerArrayWilsonRatio</tabTrigger>
-<scope></scope>
-<caption>Show wilson ratio of miller array for a specified Miller array. </caption>
-</snippet>
