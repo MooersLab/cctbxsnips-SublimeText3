@@ -64,7 +64,7 @@ As a last resort, you can store the snippet files in `~/Library/Application\ Sup
 **Notes**
 
 - The scope for the snippets was set to `source.python`. As a result, the snippets will only appear when a Python file is being edited. 
-- The testCCTBXpython*.* series of snippets are actually bash scripts. They have the source.python scope so that they can be discovered in Jupyter notebooks with an active CCTBX kernel.
+- The testCCTBXpython*.* series of snippets are actually bash scripts. They have the source.python scope so that they can be discovered in Jupyter notebooks with an active python kernel like the kernel with the display name of "cctbx python3.9".
 
 2. **Optional** If you want to use these snippets from Sublime Text 3 to edit live cells in Jupyter or Colab notebooks, install [GhostText browser extension](https://ghosttext.fregante.com/) in your browser and the [GhostText package for SublimeText3](https://packagecontrol.io/packages/GhostText). 
 The upside of using GhostText with Sublime Text 3 is that this was the text editor for which GhostText was originally developed.
