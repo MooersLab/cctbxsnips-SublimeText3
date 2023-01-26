@@ -72,14 +72,14 @@ The GhostText package for Sublime Text 3 can be installed from within Sublime Te
 
 ## Example of Sublime Text Editing a code cell in Jupyter Notebook
 
-*Note* After opening a connected from the code cell to Sublime Text, a markdown document will appear. You will need to manually change the scope to Python by clicking on the markdown text in the lower righthand corner. This will open a menu with a list of programming languages. Select **python**. Now you will be able to access the snippets.
+*Note* After opening a connection from a code cell in a Jupyter Notebook (light-theme) to Sublime Text (dark-theme), a markdown document will appear in Sublime Text. You will need to manually change the scope to Python by clicking on the markdown text in the lower righthand corner (see second image below). This will open a menu with a list of programming languages. Select **python**. Now you will be able to access the snippets.
 
-The image below shows how entering in SublimeText3 "imp" for the word *import* narrowed a list of possible snippets to *millerMtzImports. The "imp" letters appear in the Juptyer notebook instantly, but the snippets can also be accessed from the editor. The snippet is in the miller array family of snippets. The use of the miller submodule is an older approach to importing mtz files into cctbx.
+The image below shows how entering in SublimeText3 "imp" for the word *import* narrowed a list of possible snippets to *millerMtzImports*. The "imp" letters appear in the Juptyer notebook instantly, but the snippets are only accessed from Sublime Text. The snippet is in the miller array family of snippets. The use of the miller submodule is an older approach to importing mtz files into CCTBX.
 
 <p align="center"><img src="images/threeLetters.png" style="width: 90vw; min-width: 330px;"></p>
 
 
-The image below shows the result of hit tab after entering "imp". The highlighted text is a placeholder value at the only tab stop in the snippet. Enter the new mtz filename to customize for your use.
+The image below shows the result of hitting tab after selecting the desired snippet in the list of snippets. The highlighted text in the snippet in SublimeText is a placeholder value. This placeholder at the only nontrivail tab stop in the snippet (There is another tab stop at the bottom of the snippet that moves the cursor to the start of a new line. Enter the desired mtz filename by typing over the placeholder value to customize for your use.
 
 <p align="center"><img src="images/insertedSnippet.png" style="width: 90vw; min-width: 330px;"></p>
 
