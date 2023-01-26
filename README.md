@@ -74,7 +74,11 @@ The GhostText package for Sublime Text 3 can be installed from within Sublime Te
 
 *Note* After opening a connection from a code cell in a Jupyter Notebook (light-theme) to Sublime Text (dark-theme), a markdown document will appear in Sublime Text. You will need to manually change the scope to Python by clicking on the markdown text in the lower righthand corner (see second image below). This will open a menu with a list of programming languages. Select **python**. Now you will be able to access the snippets.
 
-The image below shows how entering in SublimeText3 "imp" for the word *import* narrowed a list of possible snippets to *millerMtzImports*. The "imp" letters appear in the Juptyer notebook instantly, but the snippets are only accessed from Sublime Text. The snippet is in the miller array family of snippets. The use of the miller submodule is an older approach to importing mtz files into CCTBX.
+The image below shows popup menu of snippets and autocompletion text that appear in SublimeText by entering two letters in found in the list of code fragments.
+
+<p align="center"><img src="images/snippetMenu.png" style="width: 90vw; min-width: 330px;"></p>
+
+The image below shows how entering a third letter `p` (e.g., "imp") of the word *import* narrowed the list of snippets to *millerMtzImports*. The "imp" letters appear in the Juptyer notebook instantly, but the snippets are only accessed from Sublime Text. The snippet is in the miller array family of snippets. The use of the miller submodule is an older approach to importing mtz files into CCTBX.
 
 <p align="center"><img src="images/threeLetters.png" style="width: 90vw; min-width: 330px;"></p>
 
