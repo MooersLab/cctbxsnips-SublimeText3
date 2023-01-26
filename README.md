@@ -76,11 +76,13 @@ The GhostText package for Sublime Text 3 can be installed from within Sublime Te
 
 The image below shows how entering in SublimeText3 "imp" for the word *import* narrowed a list of possible snippets to *millerMtzImports. The "imp" letters appear in the Juptyer notebook instantly, but the snippets can also be accessed from the editor. The snippet is in the miller array family of snippets. The use of the miller submodule is an older approach to importing mtz files into cctbx.
 
-<-- !-->
+<p align="center"><img src="images/threeLetters.png" style="width: 90vw; min-width: 330px;"></p>
+
 
 The image below shows the result of hit tab after entering "imp". The highlighted text is a placeholder value at the only tab stop in the snippet. Enter the new mtz filename to customize for your use.
 
-<-- !-->
+<p align="center"><img src="images/insertedSnippet.png" style="width: 90vw; min-width: 330px;"></p>
+
 
 ## Related repositories
 
