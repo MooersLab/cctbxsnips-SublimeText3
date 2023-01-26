@@ -11,7 +11,7 @@ It is available in Anaconda in the conda-forge channel as cctbx-base for python3
 
 ### Blaine's cctbx install protocol
 
-I assume that Anaconda has already been installed. We will create a conda env specifically for CCTBX. CCTBX has numerous dependencies. It is best kept in an isolated env. We also create the correpsonding Jupyter notebook kernel while we are at it. 
+I assume that Anaconda has already been installed. We will create a conda env specifically for CCTBX. CCTBX has numerous dependencies; I find it best to keep CCTBX in an isolated environment. We will also create the correpsonding Jupyter notebook kernel while we are at it. 
 
 Execute one line at a time: Wait for the execution to finish before executing the next line.
 
@@ -24,10 +24,12 @@ python -m ipykernel install --user --name cctbx39 --display-name "cctbx python3.
 ```
 
 The second to last command triggers the installation of Jupyter in the cctbx39 env.
-The last command creates and installs the Jupyter kernel in `~/Library/Jupyter/kernels/cctbx39` on the Mac.
-Select **cctbx python3.9** from the list of kernels when opening a new notebook in Jupyter.
+The last command creates and installs the Jupyter kernel in `~/Library/Jupyter/kernels/cctbx39` on macOS.
+Jupyter will display "cctbx python3.9" for this kernel in the pulldown list of kernels.
 
-Replace the *3.9* or *39* above with whatever version of Python you want to use (between 3.8 and 3.11).
+Replace the *3.9* or *39* above with whatever version of Python you want to use (between 3.8, 3.9, 3.10, or 3.11).
+Earlier versions of CCTBX used Python3.7. 
+These older versions are also available on Anaconda.
 
 
 ## The problems that this repo addresses
@@ -57,16 +59,28 @@ cp -a ./cctbxsnips-SublimeText3/st3cctbxsnips/* ~/Library/Application\ Support/S
 ```   
 
 SublimeText should be able to find snippets stored in subfolders of the `~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User` folder.
-As a last resort, you can stored the snippet files in `~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User`.
+As a last resort, you can store the snippet files in `~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User`.
 
 **Notes**
 
-- The scope for the snippets was set to source.python. As a result, the snippets will only appear when a Python file is being edited. 
-- The scope of the testCCTBXpython*.* series of snippets are actually bash scripts. They have the source.python scope so that they can be discovered in Jupyter notebooks with an active Python kernel or the cttbx kernel.
+- The scope for the snippets was set to `source.python`. As a result, the snippets will only appear when a Python file is being edited. 
+- The testCCTBXpython*.* series of snippets are actually bash scripts. They have the source.python scope so that they can be discovered in Jupyter notebooks with an active CCTBX kernel.
 
 2. **Optional** If you want to use these snippets from Sublime Text 3 to edit live cells in Jupyter or Colab notebooks, install [GhostText browser extension](https://ghosttext.fregante.com/) in your browser and the [GhostText package for SublimeText3](https://packagecontrol.io/packages/GhostText). 
-The upside of using GhostText with Sublime Text 3 is that this was the defualt text editor for which GhostText was originally developed.
-The GhostText package for Sublime Text 3 can be installed from install Sublime Text 3 via `Tools --> Command Palette` and select **Package Control: Install Package**. Then enter **GhostText**.
+The upside of using GhostText with Sublime Text 3 is that this was the text editor for which GhostText was originally developed.
+The GhostText package for Sublime Text 3 can be installed from within Sublime Text 3 via `Tools --> Command Palette` and select **Package Control: Install Package**. Then enter **GhostText**.
+
+## Example of Sublime Text Editing a code cell in Jupyter Notebook
+
+*Note* After opening a connected from the code cell to Sublime Text, a markdown document will appear. You will need to manually change the scope to Python by clicking on the markdown text in the lower righthand corner. This will open a menu with a list of programming languages. Select **python**. Now you will be able to access the snippets.
+
+The image below shows how entering in SublimeText3 "imp" for the word *import* narrowed a list of possible snippets to *millerMtzImports. The "imp" letters appear in the Juptyer notebook instantly, but the snippets can also be accessed from the editor. The snippet is in the miller array family of snippets. The use of the miller submodule is an older approach to importing mtz files into cctbx.
+
+<-- !-->
+
+The image below shows the result of hit tab after entering "imp". The highlighted text is a placeholder value at the only tab stop in the snippet. Enter the new mtz filename to customize for your use.
+
+<-- !-->
 
 ## Related repositories
 
