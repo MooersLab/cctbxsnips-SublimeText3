@@ -1,4 +1,3 @@
-# cctbxsnips-SublimeText3
 
 # cctbxsnips for the SublimeText3 text editor
 
@@ -35,21 +34,36 @@ Replace the *3.9* or *39* above with whatever version of Python you want to use 
 
 1. **Facilitation of code reuse**. The use of code snippets can save time by reusing existing code. The presence of tab stops in code snippets can help ensure that all parameters that need customization to a new problem are considered. Thus, tab stops can reduce subsequent debugging.
 
-2. **Use of Atom to edit Jupyter and Colab code and markdown cells** The existnig snippet formats for Jupyter and Colab notebooks do not support tab triggers and tab stops: These are standard features of code snippet systems in most text editors. We can overcome these limitations by sending the active code cell to Atom via the GhostText extension for the browser.
+2. **Use of SublimeText3 to edit Jupyter and Colab code and markdown cells**. The existing snippet formats for Jupyter and Colab notebooks do not support tab triggers and tab stops: These are standard features of code snippet systems in most text editors. We can overcome these limitations by sending the active code cell to SublimeText via the GhostText extension for the browser.
 
 
 ## Installation
 
-1. Install the snippets for SublimeText3.
+1. Install the snippets for Sublime Text 3.
 
-You will need the **snippets** package to be able to use the cctbx snippets in Atom. The package installer is very intuitive. Go to Packages → Settings View → Install packages/themes. Search for **snippets** and click the install button. It may already be installed, but you must make sure that the **snippets** package is enabled (green bar along the button). 
+The snippets are stored in separate files with the file extension *.sublime-snippet*.
+For all operating systems (Mac, Windows, Linux), go to `Preferences→Browse Packages...→User→snippets`. 
+You may need to create the subdirectory called snippets. 
+Copy and paste cctbxsnips-SublimeText3 into the snippets folder.
+
+To acheive the same end from the terminal in macOS, do the following steps:
+
+1. Create the snippets directory in the Sublime Text3 folder: `mkdir ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/snippets/`
+2. Add the snippet files to the Sublime Text 3 folder:
+
+`cp -a ./cctbxsnips-SublimeText3/st3cctbxsnips/* ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/snippets/Pymol/. `   
+
+
+
+You will need the **snippets** package to be able to use the cctbx snippets in Sublime Text 3. The package installer is very intuitive. Go to Packages → Settings View → Install packages/themes. Search for **snippets** and click the install button. It may already be installed, but you must make sure that the **snippets** package is enabled (green bar along the button). 
 
 The snippets for all programming languages are stored in a single file that is called **snippets.cson**. The snippets for different languages are separated by the first line of a snippet library for a specific language. This line contains a specification of the scope--the kinds of script files to which a set of snippets applies. The **snippets.cson** file is stored in a hidden folder on your home directory called `~.atom/snippets.cson`.
-You can concatenate the file of cctbx snippets for Atom to your existing snippets.cson file.
-To do this, Mac users enter: `cp -a ~/cctbxsnips-Atom/cctbxsnippets.cson ~/.atom/snippets.cson`. 
+You can concatenate the file of cctbx snippets for Sublime Text 3 to your existing **snippets.cson** file.
+To do this, Mac users enter: `cp -a ~/cctbxsnips-SublimeText3/cctbxsnippets.cson ~/.atom/snippets.cson`. 
 
-2. **Optional** If you want to use these snippets from Atom to edit live cells in Jupyter or Colab notebooks, install [GhostText browser extension](https://ghosttext.fregante.com/) in your browser and the [GhostText extension for Atom](https://github.com/GhostText/GhostText-for-Atom). 
-The GhostText extension for Atom can be installed with Atom's command-line package manager (apm):  `apm i GhostText/GhostText-for-Atom`
+2. **Optional** If you want to use these snippets from Sublime Text 3 to edit live cells in Jupyter or Colab notebooks, install [GhostText browser extension](https://ghosttext.fregante.com/) in your browser and the [GhostText package for SublimeText3](https://packagecontrol.io/packages/GhostText). 
+The upside of using GhostText with Sublime Text 3 is that this was the defualt text editor for which GhostText was originally developed.
+The GhostText package for Sublime Text 3 can be installed from install Sublime Text 3 via `Tools --> Command Palette` and select **Package Control: Install Package**. Then enter **GhostText**.
 
 ## Related repositories
 
