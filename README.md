@@ -41,7 +41,8 @@ Replace the *3.9* or *39* above with whatever version of Python you want to use 
 
 1. Install the snippets for Sublime Text 3.
 
-The snippets are stored in separate files with the file extension *.sublime-snippet*.
+The snippets are stored in separate files. 
+Each file has the extension *.sublime-snippet*.
 For all operating systems (Mac, Windows, Linux), go to `Preferences→Browse Packages...→User→snippets`. 
 You may need to create the subdirectory called snippets. 
 Copy and paste cctbxsnips-SublimeText3 into the snippets folder.
@@ -51,7 +52,7 @@ To acheive the same end from the terminal in macOS, do the following steps:
 1. Create the snippets directory in the Sublime Text3 folder: `mkdir ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/snippets/`
 2. Add the snippet files to the Sublime Text 3 folder:
 
-`cp -a ./cctbxsnips-SublimeText3/st3cctbxsnips/* ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/snippets/Pymol/. `   
+`cp -a ./cctbxsnips-SublimeText3/st3cctbxsnips/* ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/snippets/Python/. `   
 
 
 
