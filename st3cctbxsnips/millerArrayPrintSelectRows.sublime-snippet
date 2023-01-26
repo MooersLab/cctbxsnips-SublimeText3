@@ -1,0 +1,9 @@
+<snippet>
+<content><![CDATA[
+list(Iobs[${1:100:105}])
+$0
+]]></content>
+<tabTrigger>millerArrayPrintSelectRows</tabTrigger>
+<scope>source.python</scope>
+<caption>Print five rows of the Iobs for a specified Miller array. </caption>
+</snippet>

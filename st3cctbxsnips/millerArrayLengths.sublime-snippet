@@ -1,0 +1,9 @@
+<snippet>
+<content><![CDATA[
+len(miller_arrays)
+$0
+]]></content>
+<tabTrigger>millerArrayLengths</tabTrigger>
+<scope>source.python</scope>
+<caption>Print length of miller arrays (i.e., the number of datasets in a mtz file).</caption>
+</snippet>

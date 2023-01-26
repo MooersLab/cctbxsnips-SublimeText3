@@ -1,0 +1,11 @@
+<snippet>
+<content><![CDATA[
+# Convert the miller array into a mtz_dataset and write out as a mtz file.
+mtz_dataset = Iobs.as_mtz_dataset(column_root_label="${1:I}")
+mtz_dataset.mtz_object().write("${2:3hz7intensities}.mtz")
+$0
+]]></content>
+<tabTrigger>millerArrayconvert2mtz</tabTrigger>
+<scope>source.python</scope>
+<caption>Convert the miller array into a mtz_dataset and write out as a mtz file.</caption>
+</snippet>

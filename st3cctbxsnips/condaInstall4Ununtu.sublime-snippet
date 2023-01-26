@@ -1,0 +1,29 @@
+<snippet>
+<content><![CDATA[
+apt install nodejs git
+wget https://repo.anaconda.com/archive/${1:Anaconda3-2020.02-Linux-x86_64.sh}
+bash ${1:Anaconda3-2020.02-Linux-x86_64.sh}
+conda create -n ${2:pc37} python=3.7 schrodinger::pymol-bundle=2.4.1 conda-forge::cctbx-base conda-forge::jupyter
+conda activate ${2:pc37}
+conda install conda-forge::jupyterlab=2.2.0
+# The following may be needed
+# jupyter serverextension enable --py jupyterlab --user 
+pip install jupyterlab-snippets-multimenus
+jupyter lab build
+# Might be needed
+# jupyter lab clean
+jupyter --path # select the top option under Data for storing the libraries
+cd ~/.local/share/jupyter # change as per output from prior line
+mkdir multimenus_snippets
+cd multimenus_snippets
+git clone https://github.com/MooersLab/juptyerlabpymolcctbx.git cctbx
+git clone https://github.com/MooersLab/juptyerlabpymolcctbxplus.git cctbx+
+git clone https://github.com/MooersLab/juptyerlabpymolpysnips.git pymol
+git clone https://github.com/MooersLab/juptyerlabpymolpysnipsplus.git pymol+
+jupyter lab # or libtbx.python -m jupyter-lab
+$0
+]]></content>
+<tabTrigger>condaInstall4Ununtu</tabTrigger>
+<scope>source.python</scope>
+<caption>Enter this snippet on the command line in an empty directory.</caption>
+</snippet>

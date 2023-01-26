@@ -1,0 +1,9 @@
+<snippet>
+<content><![CDATA[
+miller_arrays[${1:0}].min_max_d_star_sq()
+$0
+]]></content>
+<tabTrigger>millerArraydstar</tabTrigger>
+<scope>source.python</scope>
+<caption>Return the resolution range in d* in a specified Miller array.</caption>
+</snippet>
