@@ -1,0 +1,9 @@
+<snippet>
+<content><![CDATA[
+cd /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/
+sudo ln -s MacOSX.sdk MacOSX10.15.sdk
+]]></content>
+<tabTrigger>fixPermissionsOnMacSDK</tabTrigger>
+<scope></scope>
+<caption>Fix permission on MacOS SDK. Adjust the version number of the sdk as needed.</caption>
+</snippet>

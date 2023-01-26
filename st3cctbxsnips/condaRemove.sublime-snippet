@@ -1,0 +1,8 @@
+<snippet>
+<content><![CDATA[
+conda remove --name ${1:cctbx37}
+]]></content>
+<tabTrigger>condaRemove</tabTrigger>
+<scope></scope>
+<caption>The conda commands to remove cctbx37 env.</caption>
+</snippet>

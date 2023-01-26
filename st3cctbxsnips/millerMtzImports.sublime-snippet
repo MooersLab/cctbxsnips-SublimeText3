@@ -1,0 +1,11 @@
+<snippet>
+<content><![CDATA[
+from iotbx.reflection_file_reader import any_reflection_file
+hkl_file = any_reflection_file("${1:3hz7.mtz}")
+miller_arrays = hkl_file.as_miller_arrays(merge_equivalents=False)
+$0
+]]></content>
+<tabTrigger>millerMtzImports</tabTrigger>
+<scope></scope>
+<caption>Read a mtz file into a miller array.</caption>
+</snippet>

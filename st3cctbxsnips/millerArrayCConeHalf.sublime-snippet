@@ -1,0 +1,9 @@
+<snippet>
+<content><![CDATA[
+miller_arrays[${1:0}].cc_one_half()
+$0
+]]></content>
+<tabTrigger>millerArrayCConeHalf</tabTrigger>
+<scope></scope>
+<caption>Return CC one-half for a given Miller array. </caption>
+</snippet>

@@ -1,0 +1,25 @@
+<snippet>
+<content><![CDATA[
+from iotbx import reflection_file_reader
+import os
+reflection_file = reflection_file_reader.any_reflection_file(file_name=os.path.expandvars("${1:\$CNS_SOLVE/doc/html/tutorial/data/pen/scale.hkl}"))
+from cctbx import crystal
+crystal_symmetry = crystal.symmetry( unit_cell=(${2:97.37, 46.64, 65.47, 90, 115.4, 90}), space_group_symbol="${3:C2}")
+miller_arrays = reflection_file.as_miller_arrays( crystal_symmetry=crystal_symmetry)
+mtz_dataset = None
+for miller_array in miller_arrays:
+    if (mtz_dataset is None):
+        mtz_dataset = miller_array.as_mtz_dataset(
+            column_root_label=miller_array.info().labels[0]) 
+    else:
+        mtz_dataset.add_miller_array(
+            miller_array=miller_array, 
+            column_root_label=miller_array.info().labels[0])
+mtz_object = mtz_dataset.mtz_object() 
+mtz_object.show_summary()
+$0
+]]></content>
+<tabTrigger>cns2mtz</tabTrigger>
+<scope></scope>
+<caption>Miller arrays to convert CNS reflection file into an mtz file</caption>
+</snippet>

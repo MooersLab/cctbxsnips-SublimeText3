@@ -1,0 +1,8 @@
+<snippet>
+<content><![CDATA[
+!conda env list
+]]></content>
+<tabTrigger>condaListEnvs</tabTrigger>
+<scope></scope>
+<caption>List the currently available envs. The bang (!) enables running this command in a Juptyer Notebook. Delete the bang to run the command in the terminal.</caption>
+</snippet>

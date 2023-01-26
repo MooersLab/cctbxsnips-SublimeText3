@@ -1,0 +1,11 @@
+<snippet>
+<content><![CDATA[
+from iotbx.pdb.fetch import get_pdb
+import sys
+get_pdb(id="3nd4",data_type="pdb", mirror="rcsb", format="pdb", log=sys.stdout)
+$0
+]]></content>
+<tabTrigger>fetchFASTA</tabTrigger>
+<scope></scope>
+<caption>Fetch fasta file from RCSB.</caption>
+</snippet>
