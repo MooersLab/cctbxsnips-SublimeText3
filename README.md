@@ -49,18 +49,20 @@ Copy and paste cctbxsnips-SublimeText3 into the snippets folder.
 
 To acheive the same end from the terminal in macOS, do the following steps:
 
-1. Create the snippets directory in the Sublime Text3 folder: `mkdir ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/snippets/`
-2. Add the snippet files to the Sublime Text 3 folder:
+- Create the snippets directory in the Sublime Text3 folder: `mkdir ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/snippets/Python`
+- Add the snippet files to the Sublime Text 3 folder:
 
-`cp -a ./cctbxsnips-SublimeText3/st3cctbxsnips/* ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/snippets/Python/. `   
+```bash
+cp -a ./cctbxsnips-SublimeText3/st3cctbxsnips/* ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/snippets/Python/. 
+```   
 
+SublimeText should be able to find snippets stored in subfolders of the `~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User` folder.
+As a last resort, you can stored the snippet files in `~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User`.
 
+**Notes**
 
-You will need the **snippets** package to be able to use the cctbx snippets in Sublime Text 3. The package installer is very intuitive. Go to Packages → Settings View → Install packages/themes. Search for **snippets** and click the install button. It may already be installed, but you must make sure that the **snippets** package is enabled (green bar along the button). 
-
-The snippets for all programming languages are stored in a single file that is called **snippets.cson**. The snippets for different languages are separated by the first line of a snippet library for a specific language. This line contains a specification of the scope--the kinds of script files to which a set of snippets applies. The **snippets.cson** file is stored in a hidden folder on your home directory called `~.atom/snippets.cson`.
-You can concatenate the file of cctbx snippets for Sublime Text 3 to your existing **snippets.cson** file.
-To do this, Mac users enter: `cp -a ~/cctbxsnips-SublimeText3/cctbxsnippets.cson ~/.atom/snippets.cson`. 
+- The scope for the snippets was set to source.python. As a result, the snippets will only appear when a Python file is being edited. 
+- The scope of the testCCTBXpython*.* series of snippets are actually bash scripts. They have the source.python scope so that they can be discovered in Jupyter notebooks with an active Python kernel or the cttbx kernel.
 
 2. **Optional** If you want to use these snippets from Sublime Text 3 to edit live cells in Jupyter or Colab notebooks, install [GhostText browser extension](https://ghosttext.fregante.com/) in your browser and the [GhostText package for SublimeText3](https://packagecontrol.io/packages/GhostText). 
 The upside of using GhostText with Sublime Text 3 is that this was the defualt text editor for which GhostText was originally developed.
