@@ -27,7 +27,7 @@ The second to last command triggers the installation of Jupyter in the cctbx39 e
 The last command creates and installs the Jupyter kernel in `~/Library/Jupyter/kernels/cctbx39` on macOS.
 Jupyter will display "cctbx python3.9" for this kernel in the pulldown list of kernels.
 
-Replace the *3.9* or *39* above with whatever version of Python you want to use (between 3.8, 3.9, 3.10, or 3.11).
+Replace the *3.9* or *39* above with whatever version of Python you want to use  (3.8, 3.9, 3.10, or 3.11).
 Earlier versions of CCTBX used Python3.7. 
 These older versions are also available on Anaconda.
 
@@ -36,7 +36,7 @@ These older versions are also available on Anaconda.
 
 1. **Facilitation of code reuse**. The use of code snippets can save time by reusing existing code. The presence of tab stops in code snippets can help ensure that all parameters that need customization to a new problem are considered. Thus, tab stops can reduce subsequent debugging.
 
-2. **Use of SublimeText3 to edit Jupyter and Colab code and markdown cells**. The existing snippet formats for Jupyter and Colab notebooks do not support tab triggers and tab stops: These are standard features of code snippet systems in most text editors. We can overcome these limitations by sending the active code cell to SublimeText via the GhostText extension for the browser.
+2. **Use of Sublime Text 3 to edit Jupyter and Colab code and markdown cells**. The existing snippet formats for Jupyter and Colab notebooks do not support tab triggers and tab stops: These are standard features of code snippet systems in most text editors. We can overcome these limitations by sending the active code cell to SublimeText via the GhostText extension for the browser.
 
 
 ## Installation
@@ -46,10 +46,10 @@ These older versions are also available on Anaconda.
 The snippets are stored in separate files. 
 Each file has the extension *.sublime-snippet*.
 For all operating systems (Mac, Windows, Linux), go to `Preferences→Browse Packages...→User→snippets`. 
-You may need to create the subdirectory called snippets. 
-Copy and paste cctbxsnips-SublimeText3 into the snippets folder.
+You may need to create a subdirectory called *snippets*. 
+Copy and paste cctbxsnips-SublimeText3 into the *snippets* folder.
 
-To acheive the same end from the terminal in macOS, do the following steps:
+To achieve the same end from the terminal in macOS, do the following steps:
 
 - Create the snippets directory in the Sublime Text3 folder: `mkdir ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/snippets/Python`
 - Add the snippet files to the Sublime Text 3 folder:
@@ -74,16 +74,16 @@ The GhostText package for Sublime Text 3 can be installed from within Sublime Te
 
 *Note* After opening a connection from a code cell in a Jupyter Notebook (light-theme) to Sublime Text (dark-theme), a markdown document will appear in Sublime Text. You will need to manually change the scope to Python by clicking on the markdown text in the lower righthand corner (see second image below). This will open a menu with a list of programming languages. Select **python**. Now you will be able to access the snippets.
 
-The image below shows popup menu of snippets and autocompletion text that appear in SublimeText by entering two letters in found in the list of code fragments.
+The image below shows a popup menu of snippets and autocompletion text that appear in SublimeText by entering two letters found in the list of code fragments.
 
 <p align="center"><img src="images/snippetMenu.png" style="width: 90vw; min-width: 330px;"></p>
 
-The image below shows how entering a third letter `p` (e.g., "imp") of the word *import* narrowed the list of snippets to *millerMtzImports*. The "imp" letters appear in the Juptyer notebook instantly, but the snippets are only accessed from Sublime Text. The snippet is in the miller array family of snippets. The use of the miller submodule is an older approach to importing mtz files into CCTBX.
+The image below shows how entering a third letter `p` (e.g., "imp") of the word *import* narrowed the list of snippets to *millerMtzImports*. The "imp" letters appear in the Jupyter notebook instantly, but the snippets are only accessed from Sublime Text. The snippet is in the miller array family of snippets. The use of the miller submodule is an older approach to importing mtz files into CCTBX.
 
 <p align="center"><img src="images/threeLetters.png" style="width: 90vw; min-width: 330px;"></p>
 
 
-The image below shows the result of hitting tab after selecting the desired snippet in the list of snippets. The highlighted text in the snippet in SublimeText is a placeholder value. This placeholder at the only nontrivail tab stop in the snippet (There is another tab stop at the bottom of the snippet that moves the cursor to the start of a new line. Enter the desired mtz filename by typing over the placeholder value to customize for your use.
+The image below shows the result of hitting tab after selecting the desired snippet in the list of snippets. The highlighted text in the snippet in SublimeText is a placeholder value. This placeholder at the only non-trivial tab stop in the snippet (There is another tab stop at the bottom of the snippet that moves the cursor to the start of a new line. Enter the desired mtz filename by typing over the placeholder value to customize the snippet for your use.
 
 <p align="center"><img src="images/insertedSnippet.png" style="width: 90vw; min-width: 330px;"></p>
 
