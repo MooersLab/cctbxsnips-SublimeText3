@@ -1,5 +1,5 @@
 
-# cctbxsnips for the SublimeText3 text editor
+# cctbxsnips for the Sublime Text 3 text editor
 
 ## CCTBX
 
