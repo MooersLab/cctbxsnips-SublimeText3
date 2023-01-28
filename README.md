@@ -4,7 +4,7 @@
 ## CCTBX
 
 [CCTBX](https://github.com/cctbx/cctbx_project) is the Computational Crystallography Toolbox. 
-Its development is based at Berkeley-Lawrence National Laboratory.
+Its development is based at Lawrence-Berkeley National Laboratory.
 It provides code for computations with diffraction data and atomic coordinates of proteins and small molecules.
 It has C++ and Python ports.
 It is available in Anaconda in the conda-forge channel as cctbx-base for python3.8 through 3.11 for Windows, macOS, and Linux.
